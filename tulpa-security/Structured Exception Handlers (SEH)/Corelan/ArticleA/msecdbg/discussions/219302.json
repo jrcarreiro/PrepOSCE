@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "466825",
+    "ThreadId": "219302",
+    "Html": "<p>I'm a little confused about this major and minor hash. Why does it&nbsp;look like a memory address? What exactly is being hashed? And what's&nbsp;the difference between major and minor?</p>",
+    "PostedDate": "2010-07-13T07:15:07.37-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "831734",
+    "ThreadId": "219302",
+    "Html": "<p>The hashes are&nbsp;32 bit numbers and it is encoded in hex, 32 memory addresses share the same property.</p>\r\n<p><span style=\"color: black; font-size: 10pt;\">The Major hash is calculated over the first five frames of a stand and does not include the offset from a symbol. This allows for stacks to have small variances to end up with the same hash. The Minor hash is calculated over the top 64 frames and includes offsets. So if you have two crashes with the same minor hash you know they have crashed at the exact same spot and most likely are the same issue. </span></p>",
+    "PostedDate": "2012-05-03T09:49:11.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

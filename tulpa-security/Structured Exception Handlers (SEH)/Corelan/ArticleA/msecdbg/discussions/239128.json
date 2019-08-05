@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "538790",
+    "ThreadId": "239128",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>In the introduction to the tool, it is mentioned that more details are provided in the following .pptx file, but I could not get any file. I am looking for details on how this tools classifies the vulnerability as highly/less exploitable i.e. what are the\r\n parameters that are considered. Pointer to any articles or blog entries are appreciated.</p>\r\n<p>thanks &amp; regards</p>\r\n<p>-sanjay</p>\r\n",
+    "PostedDate": "2010-12-21T07:46:25.557-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "831728",
+    "ThreadId": "239128",
+    "Html": "<p>Slides from the presentation given at CanSecWest 2009</p>\r\n<p><a href=\"http://download.microsoft.com/download/7/2/8/728FE40F-93B6-47BD-B67D-78D04B63E27D/Automated%20Security%20Crash%20Dump%20Analysis.pptx\">http://download.microsoft.com/download/7/2/8/728FE40F-93B6-47BD-B67D-78D04B63E27D/Automated%20Security%20Crash%20Dump%20Analysis.pptx</a></p>",
+    "PostedDate": "2012-05-03T09:43:43.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

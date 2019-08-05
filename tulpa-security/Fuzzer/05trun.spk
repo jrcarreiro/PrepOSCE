@@ -1,0 +1,4 @@
+printf("TRUN 05trun.spk: "); //print to terminal command and filename
+s_readline(); //print received line from server
+s_string("TRUN "); //send "TRUN " to program
+s_string_variable("COMMAND"); //send fuzzed string

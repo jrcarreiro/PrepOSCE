@@ -1,0 +1,4 @@
+printf("HTER 10hter.spk: "); //print to terminal command and filename
+s_readline(); //print received line from server
+s_string("HTER "); //send "HTER " to program
+s_string_variable("COMMAND"); //send fuzzed string

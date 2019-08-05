@@ -1,0 +1,4 @@
+printf("GMON 06gmon.spk: "); //print to terminal command and filename
+s_readline(); //print received line from server
+s_string("GMON "); //send "GMON " to program
+s_string_variable("COMMAND"); //send fuzzed string

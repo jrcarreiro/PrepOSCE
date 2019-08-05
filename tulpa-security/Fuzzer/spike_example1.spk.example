@@ -1,0 +1,9 @@
+s_string("POST /testme.php HTTP/1.1\r\n");
+s_string("Host: testserver.example.com\r\n");
+s_string("Content-Length: ");
+s_blocksize_string("block1", 5);
+s_string("\r\nConnection: close\r\n\r\n");
+s_block_start("block1");
+s_string("inputvar=");
+s_string_variable("inputval");
+s_block_end("block1");

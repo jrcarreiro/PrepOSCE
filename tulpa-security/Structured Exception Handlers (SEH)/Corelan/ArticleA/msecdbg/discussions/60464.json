@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "204752",
+    "ThreadId": "60464",
+    "Html": "<p>I have downloaded the MSEC Debugger Extensins 1.0.6 package, but it contains no executables (.exe) files in it.</p>\r\n<p>How do I install or run or use it?</p>\r\n<p>Regards,</p>\r\n<p>Gunny</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-23T18:59:55.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211526",
+    "ThreadId": "60464",
+    "Html": "<p>Hi Gunny,</p>\r\n<p>The compiled debugger extensions are actually a DLL, which is loaded into the Windows Debugger (WinDbg). You can find instructions on how to use it in the readme file included in the package.</p>\r\n<p>--Dave</p>",
+    "PostedDate": "2009-07-13T16:26:42.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "213132",
+    "ThreadId": "60464",
+    "Html": "<p>Hi Dave,</p>\r\n<p>I went through readme and it says to use !load winext\\MSEC.dll to load !exploitable to windbg. I have no clue from where I should initiate this command. Readme appears to be very high level document to me. Can you explain how to load this dll to windbg? Also, Can I use Vista to load w2k3 symbols to read crash dump on Windows 2003? Do we require VC2008 ++ to use !exploitable?</p>\r\n<p>TIA</p>",
+    "PostedDate": "2009-07-17T10:50:09.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "213904",
+    "ThreadId": "60464",
+    "Html": "<p>Hi tsp,</p>\r\n<p>You issue that command from inside WinDbg.&nbsp;</p>\r\n<p>In answer to your other question, the only tool you need to use !exploitable is the Windows Debugger (WinDbg or the command line equivalents).</p>\r\n<p>--Dave</p>",
+    "PostedDate": "2009-07-20T10:40:07.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1057598",
+    "ThreadId": "60464",
+    "Html": "Hi, i use windbg 6.12.0002.633 after install x64 dll mssec.dll in to the winext\\ dir i load .exe to windbg and try !load winext\\MSEC.dll and got error:\r<br />\n0:000&gt; !load winext\\MSEC.dll \r<br />\nThe call to LoadLibrary(winext\\MSEC.dll) failed, Win32 error 0n126<br />\n<pre><code>&quot;Current module not found.&quot;</code></pre>\n\nPlease check your debugger configuration and/or network access.\r<br />\n<br />\nWhat is wrong?<br />\n",
+    "PostedDate": "2013-06-17T01:18:50.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1057603",
+    "ThreadId": "60464",
+    "Html": "<strong>oxfemale wrote:</strong><br />\n<blockquote>\nHi, i use windbg 6.12.0002.633 after install x64 dll mssec.dll in to the winext\\ dir i load .exe to windbg and try !load winext\\MSEC.dll and got error:<br />\n0:000&gt; !load winext\\MSEC.dll <br />\nThe call to LoadLibrary(winext\\MSEC.dll) failed, Win32 error 0n126<br />\n<pre><code>&quot;Current module not found.&quot;</code></pre>\n\nPlease check your debugger configuration and/or network access.<br />\n<br />\nWhat is wrong?<br />\n</blockquote>\nproblem is solved, need to download and install MSVCr110 DLL's to OS<br />\n",
+    "PostedDate": "2013-06-17T01:29:12.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "0",
+    "Name": "Automation Scripts",
+    "DevelopmentStatus": "Beta",
+    "Description": "*Classify* - A batch file used to sport crash dumps based on !exploitable output.\n*DebugWrapper* - A batch file used to debug an application. If a crash occurs it is evaluated by !exploitable and a crash dump is saved and sorted.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-05-01T17:11:06.19-07:00",
+    "Files": [
+      {
+        "Id": "74526b99-d880-4a20-98cf-4aa66b4788f3",
+        "FileName": "DebugWrapper.zip",
+        "Url": "./0/74526b99-d880-4a20-98cf-4aa66b4788f3",
+        "Type": "Application",
+        "UploadDate": "2013-05-01T15:15:49.973-07:00"
+      },
+      {
+        "Id": "588826ed-63bf-40b5-9d29-8bb730c21203",
+        "FileName": "Classify.zip",
+        "Url": "./0/588826ed-63bf-40b5-9d29-8bb730c21203",
+        "Type": "Application",
+        "UploadDate": "2013-05-01T15:15:49.957-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "MSEC Debugger Extensions v1.0.6",
+    "DevelopmentStatus": "Beta",
+    "Description": "New MSECExtensions bits, changelog below:\n\n1.0.1 Updates:\n\nA bug that resulted in overtainting H or L registers has been fixed.\nInitial External Release: March, 2009\n\n1.0.2 Updates:\n\nWhen loading user mode mini-dumps, the Gather rule now correctly sets the stack context.\n\n1.0.3 Updates:\n\nNew state and gather functionality and analyze rules to identify exceptions where the faulting address is on the stack.\nHashes are fixed at 32 bit display (8 hex characters) and code locations are fixed at 64 bit display (16 hex characters).\nAdded support for the REP SCAS instruction in the disassembler\nFixed a serious bug in the wildcard match function, which would result in anything that matched up to the first wildcard matching the entire string\nFixed a bug in which the destination pointer registers were not being set to the tainted value set for Write AVs that required taint analysis\nFixed bugs in the distinction between source and data registers for taint tracking in some rep instructions\n\n1.0.4 Updates:\n\nFixed a reporting and analysis bug, in which we change the faulting instruction as well as the invoking function when we skip excluded stack frames\n\n1.0.5 Updates:\n\nUpdates to the excluded symbols list\nHandle POP instructions that pop to memory\nHandle PUSH instructions that push to memory\nTreat POP instructions to memory the same as MOV instructions to memory\n\n1.0.6 Updates:\n\nExternal Release: June, 2009",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-12-12T18:41:16.37-08:00",
+    "Files": [
+      {
+        "Id": "0a6062e4-4877-46e2-aa66-8c9151ecebc0",
+        "FileName": "MSECExtensions_1_0_6.zip",
+        "Url": "./1/0a6062e4-4877-46e2-aa66-8c9151ecebc0",
+        "Type": "Source Code",
+        "UploadDate": "2009-06-17T12:11:13.987-07:00"
+      },
+      {
+        "Id": "fab8d0e6-4cdd-44cd-9ea1-c94e443a0623",
+        "FileName": "Classify.zip",
+        "Url": "./1/fab8d0e6-4cdd-44cd-9ea1-c94e443a0623",
+        "Type": "Application",
+        "UploadDate": "2010-08-12T17:30:11.383-07:00"
+      },
+      {
+        "Id": "529af5b0-35fd-40e6-8936-b3fe767d6786",
+        "FileName": "DebugWrapper.zip",
+        "Url": "./1/529af5b0-35fd-40e6-8936-b3fe767d6786",
+        "Type": "Application",
+        "UploadDate": "2012-12-12T18:41:15.09-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "MSEC.dll BETA v1.0.1.0 Source and Bins x86 x64",
+    "DevelopmentStatus": "Beta",
+    "Description": "! Requirements:\n\tWindows Debugger (windbg.exe)\n\n! Installation Instructions :\n\tCopy the correct version (x86 or x64) to your Windows Debugger winext sub-directory\n\n! Usage Instructions:\n\n\tYou may need to explicitly load the MSEC DLL. If you installed it to the winext sub-directory, you can load\n\tit with _!load winext\\msec.dll_\n\n{preserving formatting\n\n\t!exploitable\n\tGives an analysis, including a proposed bug title\n\n\t!exploitable -v\n\tGives a verbose analysis\n\n\t!exploitable -m\n\tGives the same output as -v, but formatted for easy machine parsing\t\n\t\n\t!exploitable -jit:address\n\tUse the JIT Exception Record to determine the exception\n\t\n\t!ror [-n <Rotation Count> [-c] <Value>\n\tGet the API name for hash value <Value> using rotation count <Rotation Count>. Use -c to do a reverse lookup from an API name to a hash value. Run !ror without options for examples.\n\n\n\t!xoru [-b] <addr> [<length>] <key>\n\tDo the Xor transformation on the buffer from address <addr> to address <addr> + <length> using the key <key> and disassemble the buffer. Use -b to leave the transformed buffer in memory. Run !xoru without options for examples. You can do other types of transformation using xora, xorui, xorua, suba, subu, adda, addu, rola, or rolu.}\n\nEnd of format preservation}\n\n! Known Issues:\n\n\t!exploitable\n\t\n\t\tThe instruction set is known to be incomplete. \t\n\t\t\n\t\tKERNEL_MODE_EXCEPTION_NOT_HANDLED / KERNEL_MODE_EXCEPTION_NOT_HANDLED_M does not currently differentiate between read and write access violations.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-03-20T01:00:18.24-07:00",
+    "Files": [
+      {
+        "Id": "a6779588-87eb-4885-b494-e3357b01e7f9",
+        "FileName": "MSECExtensions.zip",
+        "Url": "./2/a6779588-87eb-4885-b494-e3357b01e7f9",
+        "Type": "Source Code",
+        "UploadDate": "2009-03-20T01:00:18.037-07:00"
+      },
+      {
+        "Id": "25b3dbfa-8110-47a9-841a-0ed4e1c83e5a",
+        "FileName": "readme.txt",
+        "Url": "./2/25b3dbfa-8110-47a9-841a-0ed4e1c83e5a",
+        "Type": "Documentation",
+        "UploadDate": "2009-03-13T10:49:22.4-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "!exploitable 1.6",
+    "DevelopmentStatus": "Beta",
+    "Description": "1.6.0 Updates:\n\nARM Dump Support Added\nChanged default hashing algorithm to SHA256\nAdded Support to chose the hashing algorithm used (for backwards compatibility) \nAdded support for custom exclude hash list\nUpdated -v output to show which frames are used to determine the major and minor hash\nAdded version number logging\nAdded line number and source file reporting\nAdded checking for exception handler chain corruption as an Exploitable case\nAdded Stack Exhaustion as a Probably Not Exploitable case\nAdded more AppVerifier symbols to the excluded symbols list\nAdded checking for kernel mode code running in user land as an Exploitable case\nMoved \"Read AV Near Null\" to terminal rule status\nAdded \"App Verifier Stop Detected\"\nMoved \"Read AV Near Null\" to Probably Not Exploitable\nMoved \"Write AV Near Null\" to Unknown\nAdded the XLAT command for x86 and x64  \nCorrectly pull the TEB32 for WOW process on 64 bit Windows\nTranslate stack exhaustion cases that manifest as Write AVs into stack exhaustion\nChanged the naming of Stack Overflow to Stack Exhaustion\nFixed a bug in the logic determining if code is in user or kernel space",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-05-01T17:17:27.503-07:00",
+    "Files": [
+      {
+        "Id": "cc222081-1f41-44a6-af41-ec2cfec28980",
+        "FileName": "MSECExtensions_1_6_0.zip",
+        "Url": "./3/cc222081-1f41-44a6-af41-ec2cfec28980",
+        "Type": "Application",
+        "UploadDate": "2013-05-01T16:46:58.583-07:00"
+      }
+    ]
+  }
+]

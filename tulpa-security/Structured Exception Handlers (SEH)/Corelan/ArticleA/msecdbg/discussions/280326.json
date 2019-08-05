@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "701485",
+    "ThreadId": "280326",
+    "Html": "\r\n<p>Hi, I think the debugWrapper script is going to be useful to me. Would anyone be able to explain these two parameters to the script?</p>\r\n<p>@REM&nbsp; ^%~2 = command line arguments including tempate name if needed. I.E. &quot;/C:search&quot; TemplateFile.txt<br>\r\n@REM&nbsp; ^%~3 = Temple file to process.</p>\r\n<p>What is a template file supposed to be, and which parameter number should it be? Which parameter number should the input file, that causes an application crash, be? I'm a bit confusion by the repetition of &quot;template&quot; in parameters 2 and 3.</p>\r\n<p>Thanks for the help!</p>\r\n",
+    "PostedDate": "2011-11-21T14:07:02.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "831718",
+    "ThreadId": "280326",
+    "Html": "<p><span style=\"color: black; font-size: 10pt;\">I hope the following example helps clarify the issue.</span></p>\n<p><span style=\"color: black; font-size: 10pt;\">debuggerWrapper.cmd takes 5 arguments</span></p>\n<ol>\n<li><span style=\"color: black; font-size: 10pt;\">The program to debug</span></li>\n<li><span style=\"color: black; font-size: 10pt;\">The command line to the program</span></li>\n<li><span style=\"color: black; font-size: 10pt;\">The path to the file being tested&nbsp;</span>&nbsp; \n<ul>\n<li>&nbsp;<span style=\"color: black; font-size: 10pt;\"><span style=\"color: black; font-size: 10pt;\">This is needed because not all programs consume a file from the command line. Without this argument it would not be possible to copy the file to the repro location when a crash occurred.</span></span></li>\n</ul>\n</li>\n<li><span style=\"color: black; font-size: 10pt;\">Max Time&nbsp;in seconds&nbsp;to debug the program</span></li>\n<li><span style=\"color: black; font-size: 10pt;\">The directory to save crashes and repro files too</span></li>\n</ol>\n<p><span style=\"color: black; font-size: 10pt;\">In this example lets say you want to test the string literal search functionality of findstr.exe. The command line to this this is \"findstr.exe /C:string filename\". You have created a file named:\\Files\\TemplateFile.txt that you want to use as the file. If the debuggerWrapper detects a problem you want the files saved to c:\\repro. To Run this scenario you would use the following command line.</span></p>\n<ol>\n<li><span style=\"color: black; font-size: 10pt;\">commandline : %systemdir%\\system32\\findstr.exe</span></li>\n<li><span style=\"color: black; font-size: 10pt;\">arguments : \"/C:string C:\\Files\\TemplateFile.txt\"</span>\n<ul>\n<li><span style=\"color: black; font-size: 10pt;\">Notice the quotes encasing the entire commandline, you may need to escape quotes if they are required by the program.</span></li>\n</ul>\n</li>\n<li><span style=\"color: black; font-size: 10pt;\">path to file :&nbsp;&nbsp;C:\\File\\TempalteFile.txt </span></li>\n<li><span style=\"color: black; font-size: 10pt;\">timeout : 5 </span></li>\n<li><span style=\"color: black; font-size: 10pt;\">save path :&nbsp; C:\\repro</span></li>\n</ol>\n<p><span style=\"color: black; font-size: 10pt;\">Put it all together and you get</span></p>\n<p><span style=\"color: black; font-size: 10pt;\">DebuggerWrapper.cmd %systemdir%\\system32\\findstr.exe \"/C:string C:\\Files\\TemplateFile.txt\" C:\\File\\TempalteFile.txt 5 C:\\repro</span></p>",
+    "PostedDate": "2012-05-03T09:32:00.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

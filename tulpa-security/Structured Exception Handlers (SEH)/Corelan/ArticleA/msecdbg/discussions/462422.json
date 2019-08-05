@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1108135",
+    "ThreadId": "462422",
+    "Html": "Dear all,\r<br />\ni have Windows XP SP3 (x86) with WinDBG 6.11.0001.404 x86 - and it works fine. When I put MSEC.dll in winext directory '!load winext/MSEC.dll' returns:\r<br />\n<br />\nThe call to LoadLibrary(winext/MSEC.dll) failed, Win32 error 0n127<br />\n<pre><code>&quot;The specified procedure could not be found.&quot;</code></pre>\n\nPlease check your debugger configuration and/or network access.\r<br />\n<br />\nI have Visual Studio 12 using CRT 11 runtime libraries installed. Any clues/hints?\r<br />\n<br />\nRegards<br />\n",
+    "PostedDate": "2013-10-16T01:04:57.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1296810",
+    "ThreadId": "462422",
+    "Html": "I have the same problem, does anyone know the solution?<br />\n",
+    "PostedDate": "2014-08-30T15:18:49.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1297722",
+    "ThreadId": "462422",
+    "Html": "Hello - Solution is simple - for unknown (to me)reasons MSEC doesn't work with SDK windbg release (6.11.0001.404), but works properly with standalone version (6.12.0002.633 X86) which can be found here: \r<br />\n<a href=\"http://download.microsoft.com/download/A/6/A/A6AC035D-DA3F-4F0C-ADA4-37C8E5D34E3D/setup/WinSDKDebuggingTools/dbg_x86.msi\" rel=\"nofollow\">http://download.microsoft.com/download/A/6/A/A6AC035D-DA3F-4F0C-ADA4-37C8E5D34E3D/setup/WinSDKDebuggingTools/dbg_x86.msi</a>\r<br />\n<br />\nHope it helps anybody doing Corelan exploit tutors ;)\r<br />\n<br />\nHappy hunting :)<br />\n",
+    "PostedDate": "2014-09-01T04:47:25.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2014-09-01T04:47:51.393-07:00"
+  },
+  {
+    "Id": "1302800",
+    "ThreadId": "462422",
+    "Html": "Thanks Sm0q!!<br />\n",
+    "PostedDate": "2014-09-09T03:50:44.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1363407",
+    "ThreadId": "462422",
+    "Html": "I downloaded that and installed it with vc++ runtime 2012 but still the same error on xp sp3 32bit<br />\nI tested the old version 1.0.6 it worked <br />\n",
+    "PostedDate": "2015-03-14T10:20:33.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

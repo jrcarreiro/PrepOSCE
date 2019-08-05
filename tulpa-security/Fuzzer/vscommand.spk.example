@@ -1,0 +1,2 @@
+s_readline(); //print received line from server
+s_string_variable("COMMAND"); //send fuzzed string

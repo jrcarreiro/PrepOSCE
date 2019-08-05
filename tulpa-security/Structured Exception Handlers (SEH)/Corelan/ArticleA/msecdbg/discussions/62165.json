@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "210967",
+    "ThreadId": "62165",
+    "Html": "<p>&nbsp;</p>\r\n<p><span style=\"font-size:10pt\">I fuzzed a network application, and !exploitable gave me this analysis of the crash dump:</span></p>\r\n<p><span style=\"font-size:10pt\">&nbsp;</span></p>\r\n<p><span style=\"font-size:10pt\">Exploitability Classification: EXPLOITABLE</span></p>\r\n<p><span style=\"font-size:10pt\">Recommended Bug Title: Exploitable - Stack Buffer Overrun (/GS Exception) starting at </span></p>\r\n<p><span style=\"font-size:10pt\">An overrun of a protected stack buffer has been detected. This is considered exploitable, and must be fixed.</span></p>\r\n<p><span style=\"font-size:10pt\">&nbsp;</span></p>\r\n<p><span style=\"font-size:10pt\">&nbsp;</span></p>\r\n<p><span style=\"font-size:10pt\">My questions is:&nbsp; If this was detected by the /GS stack protection, then is it really exploitable?&nbsp; Isn't GS doing its job, and preventing this from being exploitable?</span></p>\r\n<p><span style=\"font-size:10pt\">&nbsp;</span></p>\r\n<p><span style=\"font-size:10pt\">Thanks!</span></p>\r\n<p><span style=\"font-size:10pt\">Jim</span></p>\r\n<p><span style=\"font-size:10pt\">&nbsp;</span></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-10T13:39:28.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211528",
+    "ThreadId": "62165",
+    "Html": "<p>Hi Jim,</p>\r\n<p>The /GS stack protection is considered defense in depth. It is bad practice to depend on defense in depth mechanisms, because that removes the &quot;in depth&quot;. Compile them in, turn them on, but don't allow their existence to be used as a rationale for leaving vulnerable code in place.</p>\r\n<p>To&nbsp;use an analogy, the fact that I have airbags in my car does not mean I shouldn't worry about the fact that my brakes don't work.</p>\r\n<p>In the case of a /GS violation, we know that there is an unconstrained (or improperly constrained) copy onto the stack. If the state of the art is such that an attacker is able to evade the version of /GS that the application was compiled against, then the attacker has the ability to get remote execution of code.</p>\r\n<p>Regards,</p>\r\n<p>&nbsp;&nbsp; --Dave</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-13T16:31:10.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

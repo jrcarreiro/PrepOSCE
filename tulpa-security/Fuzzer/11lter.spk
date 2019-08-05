@@ -1,0 +1,4 @@
+printf("LTER 11lter.spk: "); //print to terminal command and filename
+s_readline(); //print received line from server
+s_string("LTER "); //send "LTER " to program
+s_string_variable("COMMAND"); //send fuzzed string

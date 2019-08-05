@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "523065",
+    "ThreadId": "234982",
+    "Html": "\r\n<p>I get this error when trying to load MSECDbgExts64 in Visual C&#43;&#43; 2008 express&nbsp;:</p>\r\n<p><span style=\"color:#0000cc\"><strong><span style=\"text-decoration:underline\">The project consists entirely of configurations that require support for platforms which are not installed on this machine.</span></strong></span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"color:#0000cc\">I think it has something to do with the latest version of the windbg SDK for win 7 and .NET framework 4. Any thoughts? Has anyone tried this and have it work?&nbsp;</span></p>\r\n<p>I was able to build&nbsp;&nbsp;MSECDbgExts32 but that dll isn't compatible with the 64bit version of the debugger I installed on my OS (win 7 home premium).</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks!</p>\r\n<p>&nbsp;</p>\r\n<p>EDIT: Never mind, I saw the readme caveat that the express edition of C&#43;&#43; won't work for the 64bit. Is it possible for someone to setup a download link for me to get the built msec.dll for the 64bit ?</p>\r\n",
+    "PostedDate": "2010-11-16T23:53:53.733-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "831729",
+    "ThreadId": "234982",
+    "Html": "<p>Binaries are shiped with the source code, there is a x64 verion in there.</p>",
+    "PostedDate": "2012-05-03T09:44:39.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,4 @@
+printf("HELP 00help.spk: "); //print to terminal command and filename
+s_readline(); //print received line from server
+s_string("HELP "); //send "HELP " to program
+s_string_variable("COMMAND"); //send fuzzed string

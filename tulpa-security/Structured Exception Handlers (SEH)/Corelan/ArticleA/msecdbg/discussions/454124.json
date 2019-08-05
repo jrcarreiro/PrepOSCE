@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1083260",
+    "ThreadId": "454124",
+    "Html": "Hey All -\r<br />\n<br />\nI'm new to using WinDbg and new to using the exploitable crash analyzer.\r<br />\n<br />\nI've installed windbg on a win7x64 system and it runs fine (or seems to).  I downloaded the most recent version of the MSECExtensions (1.6.0 as of today), unzipped it, and copied the dll and pdb files from x64\\Release into my WinDbg's winext directory.\r<br />\n<br />\nWhen I launch windbg and attempt to load MSEC, this is my output:\r<br />\n<br />\n0:000&gt; !load winext/MSEC.dll\r<br />\nThe call to LoadLibrary(winext/MSEC.dll) failed, Win32 error 0n126<br />\n<pre><code>&quot;The specified module could not be found.&quot;</code></pre>\n\nPlease check your debugger configuration and/or network access.\r<br />\n<br />\nI've seen some previous posts about this that said, &quot;Read the readme in the MSEC directory&quot;. Unfortunately there is no readme in the latest release, just a license file and a changelog.\r<br />\n<br />\nAny pointers to getting msec up and running on an x64 system (such as prereqs) would be mucho appreciated.\r<br />\n<br />\nThanks,\r<br />\nReid<br />\n",
+    "PostedDate": "2013-08-21T12:27:39.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1083407",
+    "ThreadId": "454124",
+    "Html": "The 1.6 version of !exploitable was compiled in Visual Studio 12 using CRT 11 runtime. Most likely you do not have this runtime installed. \r<br />\nYou can download and install the redistributable from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30679\" rel=\"nofollow\">http://www.microsoft.com/en-us/download/details.aspx?id=30679</a>\r<br />\n<br />\nThanks<br />\n<pre><code>  Andy</code></pre>\n\n",
+    "PostedDate": "2013-08-21T20:35:35.417-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1084136",
+    "ThreadId": "454124",
+    "Html": "Great that worked.  Thanks Andy!\r<br />\n<br />\nReid<br />\n",
+    "PostedDate": "2013-08-23T05:43:28.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

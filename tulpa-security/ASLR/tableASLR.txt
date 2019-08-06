@@ -1,0 +1,15 @@
+00400000                   BlazeDVD.exe               0x0000
+10000000                   skinscrollbar.dll          0x0000
+60300000                   Configuration.dll          0x0000
+61600000                   EPG.dll                    0x0000
+64000000                   MediaPlayerCtrl.dll        0x0000
+64100000                   NetReg.dll                 0x0000
+67000000                   VersionInfo.dll            0x0000
+
+* blazedvd.exe : 79 addresses (but null bytes !)
+* skinscrollbar.dll : 0 addresses
+* configuration.dll : 2 addresses, no null bytes
+* epg.dll : 20 addresses, no null bytes
+* mediaplayerctrl.dll : 15 addresses, 8 with null bytes
+* netreg.dll : 3 addresses, no null bytes
+* versioninfo.dll : 0 addresses

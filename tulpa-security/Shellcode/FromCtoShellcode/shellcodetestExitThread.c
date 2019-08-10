@@ -1,3 +1,8 @@
+// The format of this kernel32 API can be found at http://msdn.microsoft.com/en-us/library/ms682659(VS.85).aspx. 
+// As you can see, this API requires one parameter : the exitcode (pretty much like ExitProcess())
+// Instead of looking up the address of this function using IDA, you can also use arwin, a little script written by Steve Hanna
+// c:\arwin kernel32.dll ExitThread
+
 char code[] =
 //first put our strings on the stack
 "\x68\x6e\x65\x20\x00"    //Push "Arm0ne"
@@ -23,6 +28,8 @@ char code[] =
 //clear out eax and push it to the stack
 "\x33\xc0"   //xor eax,eax => eax is now 00000000
 "\x50"       //push eax
+"\xc7\xc0\xe8\xc0\x80\x7c"   // mov eax,0x7c80c0e8
+"\xff\xe0"  //jmp eax = launch ExitProcess(0)
 //2nd parameter is caption. Pointer is in ebx, so push ebx
 "\x53"
 //next parameter is text. Pointer to text is in ecx, so do push ecx

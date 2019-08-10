@@ -1,3 +1,6 @@
+// This technique is based on a Windows API called “ExitProcess”, found in kernel32.dll.
+// One parameter : the ExitProcess exitcode. 
+// This value (zero means everything was ok) must be placed on the stack before calling the API
 char code[] =
 //first put our strings on the stack
 "\x68\x6e\x65\x20\x00"    //Push "Arm0ne"
@@ -23,6 +26,8 @@ char code[] =
 //clear out eax and push it to the stack
 "\x33\xc0"   //xor eax,eax => eax is now 00000000
 "\x50"       //push eax
+"\xc7\xc0\xFA\xCA\x81\x7C"   // mov eax,0x7C81CAFA
+"\xff\xe0"  //jmp eax = launch ExitProcess(0)
 //2nd parameter is caption. Pointer is in ebx, so push ebx
 "\x53"
 //next parameter is text. Pointer to text is in ecx, so do push ecx

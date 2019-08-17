@@ -1,0 +1,12 @@
+004AC1C2 > $ E8 C1080000    CALL WinMerge.004ACA88
+004AC1C7   .^E9 37FDFFFF    JMP WinMerge.004ABF03
+
+Address=004AC1C2
+Module/Label/Exception=<winmergeu.exe.EntryPoint>
+State=One-time
+Disassembly=call winmergeu.4ACA88
+Hits=0
+Summary=entry breakpoint
+
+
+ 00642000

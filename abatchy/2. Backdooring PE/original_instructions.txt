@@ -10,3 +10,29 @@ Summary=entry breakpoint
 
 
  00642000
+
+
+00400000 -> base Address
+004061E2 > $ E8 74480000    CALL x96dbg.0040AA5B
+004061E7   . E9 00000000    JMP x96dbg.004061EC
+
+61 E2 -> Call RVA
+61 E7 -> JMP RVA
+2 B0 00 - 61 E2 = 2 4E 1E
+
+0042B402 -> RVA = 2 B4 02 
+0042B0CA 
+
+[*] New cave detected !
+  section_name: .rsrc
+  cave_begin:   0x01231ab1
+  cave_end:     0x0123203a
+  cave_size:    0x00000589
+  vaddress:     0x016d7eb1
+  infos:        Readable, Contain initialized data
+
+  00402CDC | EB 10                    | jmp winscp.402CEE                       |
+00402CDE | 66:623A                  | bound di,dword ptr ds:[edx]             |
+
+00402CE9 | E9 AC80D300              | jmp winscp.113AD9A                      |
+00402CEE | A1 9F80D300              | mov eax,dword ptr ds:[D3809F]           |

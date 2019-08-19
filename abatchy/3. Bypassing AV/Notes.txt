@@ -1,0 +1,9 @@
+00404048 | 83EC 0C                  | sub esp,C                              
+0040404B | 53                       | push ebx                               
+0040404C | 55                       | push ebp                               
+0040404D | 56                       | push esi                               
+0040404E | 57                       | push edi                               
+0040404F | C74424 10 E8914000       | mov dword ptr ss:[esp+10],devcpp-4.9.9.
+
+New entry point
+00406CBC | 0000                     | add byte ptr ds:[eax],al                |

@@ -53,7 +53,7 @@ MemoryAddressing_ proc
 	mov	[edi], eax				;Save to 'v2'
 	
 ; Example #3 - base register + index register
-	mov ebx, ofsset FibVlas		;ebx = FibVals
+	mov ebx, offset FibVals		;ebx = FibVals
 	mov esi, [ebp+8]			;esi = i
 	shl esi, 2					;Load table value
 	mov eax, [ebx+esi]

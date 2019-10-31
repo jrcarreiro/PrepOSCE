@@ -1,0 +1,5 @@
+﻿ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMinA_ referenced in function _wmain
+ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMaxA_ referenced in function _wmain
+ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMinB_ referenced in function _wmain
+ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMaxB_ referenced in function _wmain
+F:\OneDrive\Studies\OSCE\PrepOSCE\ASM\32\ModernX86AssemblyLanguageProgramming\Chapter02\ConditionCodes\Debug\ConditionCodes.exe : fatal error LNK1120: 4 unresolved externals

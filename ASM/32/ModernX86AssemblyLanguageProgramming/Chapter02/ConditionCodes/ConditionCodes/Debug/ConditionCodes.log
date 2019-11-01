@@ -1,4 +1,5 @@
-﻿ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMinA_ referenced in function _wmain
+﻿  ConditionCodes.cpp
+ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMinA_ referenced in function _wmain
 ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMaxA_ referenced in function _wmain
 ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMinB_ referenced in function _wmain
 ConditionCodes.obj : error LNK2019: unresolved external symbol _SignedMaxB_ referenced in function _wmain

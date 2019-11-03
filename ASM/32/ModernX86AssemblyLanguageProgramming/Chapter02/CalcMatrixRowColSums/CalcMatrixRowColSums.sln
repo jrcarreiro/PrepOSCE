@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalcMatrixRowColSums", "CalcMatrixRowColSums\CalcMatrixRowColSums.vcproj", "{0B2C0F24-3318-42DC-A1A4-3E6DF7B7477C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B2C0F24-3318-42DC-A1A4-3E6DF7B7477C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B2C0F24-3318-42DC-A1A4-3E6DF7B7477C}.Debug|Win32.Build.0 = Debug|Win32
+		{0B2C0F24-3318-42DC-A1A4-3E6DF7B7477C}.Release|Win32.ActiveCfg = Release|Win32
+		{0B2C0F24-3318-42DC-A1A4-3E6DF7B7477C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -2,7 +2,13 @@
     .mmx
     .model flat, c
     .code
-
+; extern "C" int CalcMatrixRowColSums_(const int* x, int nrows, int ncols, int* row_sums, int* col_sums);
+;
+; Description:  The following function sums the rows and columns of a
+;               2-D matrix.
+;
+; Returns:      0 = 'nrows' or 'ncols' is invalid
+;               1 = success
 CalcMatrixRowColSums_ proc
     push ebp
     mov ebp, esp

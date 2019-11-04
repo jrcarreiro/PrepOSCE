@@ -188,6 +188,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CalcMatrixRowColSumsMisc.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration

@@ -2,6 +2,10 @@
     .mmx
     .model flat, c
     .code
+; Note that the function CalcMatrixRowColSums makes
+; extensive use of BaseReg+IndexReg*ScaleFactor memory addressing, which simplifies
+; the loading of elements from matrix x and the updating of elements in both row_sums
+; and col_sums
 ; extern "C" int CalcMatrixRowColSums_(const int* x, int nrows, int ncols, int* row_sums, int* col_sums);
 ;
 ; Description:  The following function sums the rows and columns of a
@@ -27,7 +31,7 @@ CalcMatrixRowColSums_ proc
     xor eax, eax                        ;eax = fill value
     rep stosd                           ;fill array with zeros
 ; Initialize outer loop variables
-    mov ebx, [ebp+]                     ;ebx = 'x'
+    mov ebx, [ebp+8]                     ;ebx = 'x'
     xor esi, esi                        ;i = 0
 ; Outer loop
 Lp1:

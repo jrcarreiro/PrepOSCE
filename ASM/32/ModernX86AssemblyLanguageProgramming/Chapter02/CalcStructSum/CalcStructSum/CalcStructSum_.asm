@@ -38,5 +38,5 @@ CalcStructSum_ proc
     pop ebx
     pop ebp
     ret
-CalcStructSum_ ends
+CalcStructSum_ endp
     end

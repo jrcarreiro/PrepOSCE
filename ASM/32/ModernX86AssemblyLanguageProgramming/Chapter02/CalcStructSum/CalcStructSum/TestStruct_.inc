@@ -1,4 +1,4 @@
-TestStruct_ struct
+TestStruct struct
 Val8    byte ?
 Pad8    byte ?
 Val16   word ?

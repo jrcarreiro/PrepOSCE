@@ -184,6 +184,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CalcStructSum_.asm"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration

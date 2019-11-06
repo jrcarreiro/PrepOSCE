@@ -62,9 +62,9 @@ Lp1:
 	add [ebp-4], ecx			;des_index += len(src[i])
 
 ; Copy src[i] to &des[des_index] (esi already contains src[i])
-   inc ecx                      ;ecx = len(src[i]) + 1
-   lea edi,[ebx+edx*2]          ;edi = &des[des_index_temp]
-   rep movsw                    ;perform string move
+    inc ecx                      ;ecx = len(src[i]) + 1
+    lea edi,[ebx+edx*2]          ;edi = &des[des_index_temp]
+    rep movsw                    ;perform string move
         
 ; Update i and repeat if not done
 	mov eax, [ebp-8]
